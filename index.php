@@ -43,6 +43,10 @@ $routes = [
         'usuarios/listar' => ['controller' => 'UsuarioController', 'action' => 'listar'],
         'productos/ver' => ['controller' => 'ProductoController', 'action' => 'ver'],
         'usuarios/crear' => ['controller' => 'UsuarioController', 'action' => 'crear'],
+
+        /* LISTA DE PRODUCTOS TIENDA */
+        'ListaProductos' => ['controller' => 'UsuarioController', 'action' => 'crear'],
+
 ];
 
 // Verifica si la ruta existe
