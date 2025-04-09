@@ -16,5 +16,8 @@
     <a href="<?php echo BASE_URL; ?>productos/ver">
         <button>Ir a Productos</button>
     </a>
+    <a href="<?php echo BASE_URL; ?>ListaProductos">
+        <button>Lista Productos</button>
+    </a>
 </body>
 </html>

@@ -45,7 +45,7 @@ $routes = [
         'usuarios/crear' => ['controller' => 'UsuarioController', 'action' => 'crear'],
 
         /* LISTA DE PRODUCTOS TIENDA */
-        'ListaProductos' => ['controller' => 'UsuarioController', 'action' => 'crear'],
+        'ListaProductos' => ['controller' => 'ProductoController', 'action' => 'listar'],
 
 ];
 
