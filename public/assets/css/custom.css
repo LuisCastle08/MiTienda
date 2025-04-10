@@ -1,13 +1,18 @@
+
 nav {
     color: #FFFFFF !important;
     background-color: #FA7921 !important; 
     font-weight: bold;
 }
 
-body {
-    overflow-x: hidden;
-}
-
 #btn-buscar {
     background-color: #E9CE2C !important;
+}
+
+.headLog {
+    background-color: #FFC107;
+}
+
+.bodyFondo {
+    background-color: #343434;
 }

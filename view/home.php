@@ -1,29 +1,13 @@
 <?php
     $title = "Home";
+    $fondo = '';
     require_once __DIR__ . '/shared/header.php';
 ?>    
 <div class="container-fluid">
     <!-- Navbar -->
-    <div class="row">
-        <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#"><i class="fas fa-store-alt ms-2 me-2"></i> Mi Tienda</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="<?php echo BASE_URL; ?>">Home</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="<?php echo BASE_URL; ?>ListaProductos">Lista Productos</a>
-                </li>
-            </ul>
-            </div>
-        </div>
-        </nav>
-    </div>
+    <?php
+        require_once __DIR__ . '/shared/navbar.php';
+    ?> 
     <!-- Fin Navbar -->
 
     <!-- Buscador -->
@@ -41,8 +25,8 @@
         </div>
     </div>
 
-    <div class="row mt-3">
-        <ol class="list-group list-group-numbered p-0">
+    <div class="row mt-3 d-flex justify-content-center align-items-center">
+        <ol class="list-group list-group-numbered p-0 col-lg-6 justify-content-center">
             <li class="list-group-item d-flex justify-content-between align-items-start">
                 <button type="button" class="btn d-flex justify-content-center align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-image"></i></button>
                 <div class="ms-2 me-auto">
@@ -99,7 +83,7 @@
 
     <!-- Modal Imagen -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
                     <h1 class="modal-title fs-5" id="exampleModalLabel">Imagen de la Tienda</h1>
