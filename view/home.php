@@ -2,6 +2,7 @@
     $title = "Home";
     require_once __DIR__ . '/shared/header.php';
 ?>    
+<div class="container-fluid">
     <!-- Navbar -->
     <div class="row">
         <nav class="navbar navbar-expand-lg">
@@ -25,11 +26,8 @@
     </div>
     <!-- Fin Navbar -->
 
-<?php
-    require_once __DIR__ . '/shared/footer.php';
-?>  
     <!-- Buscador -->
-    <div class="container">
+    <div class="container-fluid">
         <div class="row mt-4 justify-content-center">
             <div class="col-12 text-center">
                 <h4>Buscar Tiendas Cercanas</h4>
@@ -37,14 +35,14 @@
             <div class="col-12">
                 <form class="d-flex justify-content-center" role="search">
                     <input class="form-control me-2 w-50" type="search" placeholder="Buscar" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    <button class="btn btn-warning" type="submit" id="btn_buscar">Buscar</button>
                 </form>
             </div>
         </div>
     </div>
 
     <div class="row mt-3">
-        <ol class="list-group list-group-numbered ms-1">
+        <ol class="list-group list-group-numbered p-0">
             <li class="list-group-item d-flex justify-content-between align-items-start">
                 <button type="button" class="btn d-flex justify-content-center align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-image"></i></button>
                 <div class="ms-2 me-auto">
@@ -114,9 +112,8 @@
         </div>
     </div>
     <!-- Fin Modal Imagen -->
+</div>
 
-
-    <script src="https://kit.fontawesome.com/33f535655a.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</body>
-</html>
+<?php
+    require_once __DIR__ . '/shared/footer.php';
+?> 
