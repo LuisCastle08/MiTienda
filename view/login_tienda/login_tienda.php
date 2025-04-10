@@ -31,7 +31,9 @@
                             <input type="password" class="form-control" id="exampleFormControlInput1">
                         </div>
                         <div class="mb-3 mt-3 col-12 d-flex justify-content-center">
-                            <button type="button" class="btn col-12 btn-warning d-flex justify-content-center align-items-center"><h6>Login</h6></button>
+                            <a href="<?php echo BASE_URL; ?>DetalleTienda" class="btn btn-warning col-12 d-flex justify-content-center align-items-center">
+                                <h6 class="mb-1 mt-1">Login</h6>
+                            </a>
                         </div>
                         <div class="d-flex justify-content-center align-items-center">
                             <div>
