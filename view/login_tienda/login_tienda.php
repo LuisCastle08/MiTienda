@@ -19,9 +19,8 @@
                         <h5>Inicio de Sesión</h5>
                     </div>
                     <div class="card-body">
-                        <!--/TODO:este es mio-->
                         <div class="d-flex justify-content-center">
-                            <img src="https://cdn-icons-png.freepik.com/512/4596/4596193.png" alt="Imagen de login" width="100" height="100">
+                        <img src="<?php echo IMAGENES_URL . 'login.png'; ?>" alt="Imagen de login" width="100" height="100">
                         </div>
                         <div class="mb-3 mt-3 col-12">
                             <label for="exampleFormControlInput1" class="form-label text-center col-12"><h6>USUARIO</h6></label>

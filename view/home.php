@@ -78,7 +78,6 @@
             </li>
         </ol>
     </div>
-
     <!-- Fin Buscador -->
 
     <!-- Modal Imagen -->

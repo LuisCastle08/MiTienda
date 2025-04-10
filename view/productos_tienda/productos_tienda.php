@@ -55,7 +55,7 @@
                     <div class="card">
                         <div class="card-media">
                             <a href="#">
-                                <img src="https://images-na.ssl-images-amazon.com/images/I/61pmrFT-M7L._AC_US218_.jpg" alt="product name">
+                                <img src="<?php echo IMAGENES_URL ?>ejemplo-tienda.png" alt="product name">
                             </a>
                         </div>
                         <div class="card-body">

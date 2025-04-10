@@ -15,7 +15,8 @@ $projectName = "/MiTienda/";
 
 // Definir la base URL dinámica
 define('BASE_URL', $protocol . $host . $projectName);
-define('IMAGENES','/../public/assets/img/');
+define('IMAGENES_URL', 'public/assets/img/'); // Ruta pública para HTML
+
 
 // Configuración de la base de datos (si es necesario)
 define('DB_HOST', '191.96.56.1');
