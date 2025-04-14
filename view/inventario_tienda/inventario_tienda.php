@@ -42,7 +42,7 @@
     </div>-->
 <?php for($i = 0; $i < 5; $i++): ?>
     <div class="row justify-content-center mt-4">
-        <div class="col-11 col-md-6">
+        <div class="col-12 col-md-6">
             <div class="card">
                 <div class="card-body">
                     <div class="row">
@@ -50,7 +50,7 @@
                             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP1sWioeP5ize3TyZRnLFmMuqx4HpRHkwmGw&s"
                             alt="" style="object-fit:contain; border-radius: 5px" width="50" height="50" class="me-2">
                         </div>
-                        <div class="col-8 justify-content-center text-center">
+                        <div class="col-8 justify-content-center text-center ms-1">
                             <label style="font-weight:bold">GANSITO MARINELA BIMBO DE LA BIMBO BIMBO</label>
                         </div>
                         <div class="col-2 me-1 pe-3 ps-0 ms-0 pe-1">
