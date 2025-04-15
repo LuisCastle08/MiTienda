@@ -31,7 +31,7 @@
                 <button type="button" class="btn d-flex justify-content-center align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-image"></i></button>
                 <div class="ms-2 me-auto">
                 <div class="fw-bold">Abarrotes San Diego</div>
-                Fracc. San Manuel Parrilla II Mza 20 Lt 22 CP. 86284
+                Fracc. San Manuel Parrilla II Mza 20 Lt 22 CP. 232323
                 </div>
             </li>
             <li class="list-group-item d-flex justify-content-between align-items-start">
