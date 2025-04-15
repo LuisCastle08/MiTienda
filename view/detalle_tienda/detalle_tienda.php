@@ -33,7 +33,7 @@
             </a>
         </div>
         <div class="col-12 d-flex justify-content-center">
-            <a href="#" class="text-decoration-none text-dark w-100 d-flex justify-content-center">
+            <a href="<?php echo BASE_URL; ?>InventarioTienda" class="text-decoration-none text-dark w-100 d-flex justify-content-center">
                 <div class="card col-10 col-lg-5 mb-3" style="background-color: #FFC107">
                     <div class="card-body text-center">
                         <h6><i class="fas fa-box me-2"></i>Inventario</h6>

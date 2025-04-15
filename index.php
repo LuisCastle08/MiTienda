@@ -49,7 +49,9 @@ $routes = [
         /* Login de la Tienda */
         'LoginTienda' => ['controller' => 'LoginTiendaController', 'action' => 'login'],
         /* Detalle de la tienda */
-        'DetalleTienda' => ['controller' => 'DetalleTiendaController', 'action' => 'detalle']
+        'DetalleTienda' => ['controller' => 'DetalleTiendaController', 'action' => 'detalle'],
+        /* Inventario de la tienda */
+        'InventarioTienda' => ['controller' => 'InventarioTiendaController', 'action' => 'inventario']
 
 ];
 
