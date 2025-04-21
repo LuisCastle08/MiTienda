@@ -54,6 +54,9 @@ $routes = [
         'InventarioTienda' => ['controller' => 'InventarioTiendaController', 'action' => 'inventario'],
         'ListaProductos1' => ['controller' => 'ProductoController', 'action' => 'listaPro'],
 
+        /* Añadir Tienda */
+        'AgregarTienda' => ['controller' => 'AgregarTiendaController', 'action' => 'agregar'],
+
 ];
 
 // Verifica si la ruta existe
