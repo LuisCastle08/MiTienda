@@ -24,16 +24,14 @@
                         </div>
                         <div class="mb-3 mt-3 col-12">
                             <label for="exampleFormControlInput1" class="form-label text-center col-12"><h6>USUARIO</h6></label>
-                            <input type="text" class="form-control" id="exampleFormControlInput1">
+                            <input type="text" class="form-control" id="usuario">
                         </div>
                         <div class="mb-3 col-12">
                             <label for="exampleFormControlInput1" class="form-label text-center col-12"><h6>CONTRASEÑA</h6></label>
-                            <input type="password" class="form-control" id="exampleFormControlInput1">
+                            <input type="password" class="form-control" id="pass">
                         </div>
                         <div class="mb-3 mt-3 col-12 d-flex justify-content-center">
-                            <a href="<?php echo BASE_URL; ?>DetalleTienda" class="btn btn-warning col-12 d-flex justify-content-center align-items-center">
-                                <h6 class="mb-1 mt-1">Login</h6>
-                            </a>
+                            <button type="button" class="btn btn-warning w-100" style="font-weight: bold;" onclick="login();">Iniciar Sesión</button>
                         </div>
                         <div class="d-flex justify-content-center align-items-center">
                             <div>
@@ -53,6 +51,8 @@
     <!-- Fin Login -->
 </div>
 
+
 <?php
     require_once __DIR__ . '/../shared/footer.php';
 ?> 
+<script src="view/login_tienda/login_tienda.js"></script>
