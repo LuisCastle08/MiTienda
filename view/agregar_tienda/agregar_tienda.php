@@ -14,7 +14,7 @@
     <div class="container-fluid p-3">
     <div class="container mt-4">
     <h2 class="mb-4">Agregar Tienda</h2>
-    <form action="ruta_a_guardar_tienda.php" method="POST" enctype="multipart/form-data">
+    <form action="" method="POST" enctype="multipart/form-data">
         <div class="mb-3">
             <label for="nombre" class="form-label">Nombre de la Tienda</label>
             <input type="text" class="form-control" id="nombre" name="nombre" required>
