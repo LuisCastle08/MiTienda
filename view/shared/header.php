@@ -11,6 +11,9 @@
 </head>
 
 <?php 
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
 $fondo = isset($fondo) ? $fondo : '';
 if($fondo && isset($fondo)){?>
     <body class="bodyFondo">

@@ -47,8 +47,19 @@
         </div>
     </div>
 
-    
     <!-- Fin Login -->
+    <!-- Toast Usuario no Encontrado -->
+    <div class="toast position-fixed bottom-0 end-0 m-3" role="alert" aria-live="assertive" aria-atomic="true" id="invalido">
+        <div class="toast-header toast-headerError" style="background-color: #2176FF !important;">
+            <i class="fas fa-exclamation-triangle me-2" style="color:#FFFFFF"></i>
+            <strong class="me-auto" style="color:#FFFFFF">Error al Iniciar Sesión</strong>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">
+        Usuario o Contraseña invalido.
+        </div>
+    </div>
+    <!-- Fin Toast -->
 </div>
 
 

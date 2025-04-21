@@ -20,7 +20,7 @@ class Login {
         if ($result) {
             return $result; // Devuelve los datos si encontró algo
         } else {
-            return ['EXISTE_DATOS' => 0]; // Devuelve esto si no encontró nada
+            return 'EXISTE_DATOS'; // Devuelve esto si no encontró nada
         }
     }
 

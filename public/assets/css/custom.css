@@ -95,4 +95,8 @@
     font-weight: bold;
     padding: 0.5em;
   }
+
+.toast .toast-headerError{
+  background-color: #2176FF !important;
+}
   

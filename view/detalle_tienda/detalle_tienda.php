@@ -13,7 +13,7 @@
         <div class="col-lg-5">
             <div class="input-group mb-3 mt-3">
                 <button type="button" class="btn d-flex justify-content-center align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-image"></i></button>
-                <input type="text" class="form-control" style="font-weight: bold;" value="La Fonda de Kiki" aria-label="Recipient's username" aria-describedby="button-addon2" disabled>
+                <input type="text" class="form-control" style="font-weight: bold;" value="<?php echo $_SESSION['TiendaNom'] ?>" aria-label="Recipient's username" aria-describedby="button-addon2" disabled>
                 <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i class="fas fa-edit"></i></button>
             </div>
         </div>

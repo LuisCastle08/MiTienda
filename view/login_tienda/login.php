@@ -1,8 +1,8 @@
 <?php
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
+#error_reporting(E_ALL);
+#ini_set('display_errors', 1);
 // Incluir el archivo de conexión a la base de datos
-
+session_start();
 #require_once '../config/database.php';
 #require_once '../models/User.php';
 $pdo = require_once __DIR__ . '/../../core/Database.php';
@@ -21,11 +21,32 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $result = Login::login($usuario, $pass);
 
         // Verificar si la inserción fue exitosa
-        if ($result) {
-            debbug($result,false);
-            echo json_encode(['EVENTO' => 'OK']);
+        if ($result == 'EXISTE_DATOS') {
+            #var_dump($result);
+            #exit;
+            echo json_encode(['EVENTO' => 'NO_EXISTE']);
         } else {
-            echo json_encode(['EVENTO' => 'NO', 'mensaje' => 'Error al registrar.']);
+            $_SESSION['TiendaId'] = $result['TiendaId'];
+            $_SESSION['TiendaNom'] = $result['TiendaNom'];
+            $_SESSION['TiendaDir'] = $result['TiendaDir'];
+            $_SESSION['TiendaCP'] = $result['TiendaCP'];
+            $_SESSION['TiendaEncargado'] = $result['TiendaEncargado'];
+            $_SESSION['TiendaTel'] = $result['TiendaTel'];
+            $_SESSION['TiendaFechAlta'] = $result['TiendaFechAlta'];
+            $_SESSION['TiendaVistasId'] = $result['TiendaVistasId'];
+            #$_SESSION['TiendaPass'] = $result['TiendaPass'];
+            echo json_encode([
+                'EVENTO' => 'OK',
+                'TiendaId' =>  $_SESSION['TiendaId'],
+                'TiendaNom' => $_SESSION['TiendaNom'],
+                'TiendaDir' => $_SESSION['TiendaDir'],
+                'TiendaCP' => $_SESSION['TiendaCP'],
+                'TiendaEncargado' => $_SESSION['TiendaEncargado'],
+                'TiendaTel' => $_SESSION['TiendaTel'],
+                'TiendaFechAlta' => $_SESSION['TiendaFechAlta'],
+                'TiendaVistasId' => $_SESSION['TiendaVistasId']
+                #'TiendaPass' => $result['TiendaPass']
+            ]);
         }
 
     } else {

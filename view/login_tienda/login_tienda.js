@@ -19,8 +19,11 @@ function login() {
             console.log("Respuesta del backend:", data);
             if (data.EVENTO === 'OK') {
                 console.log("SI HAY TIENDA");
+                window.location.href ="DetalleTienda";
             }else if (data.EVENTO === 'NO_EXISTE'){
                 console.log("NO HAY TIENDA");
+                $("#invalido").toast('show');
+
             } else {
                 toastr.error(data.mensaje, "Error", {
                     positionClass: "toast-top-right",
