@@ -1,8 +1,13 @@
 
-nav {
+/*nav {
     color: #FFFFFF !important;
-    background-color: #FA7921 !important; 
+    background-color: #F38F00 !important; 
     font-weight: bold;
+}*/
+.navbar {
+  color: #FFFFFF !important;
+  background-color: #F38F00 !important; 
+  font-weight: bold;
 }
 
 #btn-buscar {

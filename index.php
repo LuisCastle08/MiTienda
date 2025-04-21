@@ -51,7 +51,8 @@ $routes = [
         /* Detalle de la tienda */
         'DetalleTienda' => ['controller' => 'DetalleTiendaController', 'action' => 'detalle'],
         /* Inventario de la tienda */
-        'InventarioTienda' => ['controller' => 'InventarioTiendaController', 'action' => 'inventario']
+        'InventarioTienda' => ['controller' => 'InventarioTiendaController', 'action' => 'inventario'],
+        'ListaProductos1' => ['controller' => 'ProductoController', 'action' => 'listaPro'],
 
 ];
 

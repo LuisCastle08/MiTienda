@@ -42,23 +42,6 @@ require_once __DIR__ . '/../shared/header.php';
     </div>
 
     <!-- Productos en Página -->
-    <div class="container contenido-productos mt-4">
-        <?php for ($i = 0; $i < 10; $i++): ?>
-            <div class="card product dark mb-3">
-                <img src="<?php echo IMAGENES_URL ?>ejemplo-tienda.jpg" class="card-img-top" alt="Producto">
-                <div class="card-body product-body">
-                    <div class="text-section">
-                        <h5 class="card-title">PAN BIMBO<?php echo $i ?></h5>
-                        <p class="card-text">Producto de tienda</p>
-                    </div>
-                    <div class="cta-section">                
-                        <div>$129.00</div>
-                        <a onclick="agregar('PAN BIMBO<?php echo $i ?>', 129.00)" class="btn btn-light">COMPRAR</a>
-                    </div>
-                </div>
-            </div>
-        <?php endfor; ?>
-    </div>
 
 
     <?php for($i = 0; $i < 5; $i++): ?>
