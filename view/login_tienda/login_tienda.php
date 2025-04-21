@@ -53,6 +53,8 @@
 
 
 <?php
+    $script_dir = "login_tienda";
+    $script_file = "login_tienda.js";
     require_once __DIR__ . '/../shared/footer.php';
 ?> 
-<script src="view/login_tienda/login_tienda.js"></script>
+

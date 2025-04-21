@@ -18,14 +18,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if ($usuario && $pass) {
         $loginModel = new Login($pdo);
             // Insertar el nuevo usuario en la base de datos
-            $result = $loginModel->login($usuario, $pass);
+        $result = Login::login($usuario, $pass);
 
-            // Verificar si la inserción fue exitosa
-            if ($result) {
-                echo json_encode(['EVENTO' => 'OK']);
-            } else {
-                echo json_encode(['EVENTO' => 'NO', 'mensaje' => 'Error al registrar.']);
-            }
+        // Verificar si la inserción fue exitosa
+        if ($result) {
+            debbug($result,false);
+            echo json_encode(['EVENTO' => 'OK']);
+        } else {
+            echo json_encode(['EVENTO' => 'NO', 'mensaje' => 'Error al registrar.']);
+        }
 
     } else {
         echo json_encode(['EVENTO' => 'NO', 'mensaje' => 'Datos incompletos.']);
