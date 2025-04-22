@@ -9,21 +9,48 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <?php
+                        echo '
                         <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="<?php echo BASE_URL; ?>">Home</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="<?php echo BASE_URL; ?>ListaProductos">Lista Productos</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="<?php echo BASE_URL; ?>LoginTienda">Login Tienda</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="<?php echo BASE_URL; ?>InventarioTienda">Inventario de Tienda</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="<?php echo BASE_URL; ?>AgregarTienda">Nueva Tienda</a>
-                        </li>
+                            <a class="nav-link active" aria-current="page" href="'.BASE_URL.'">Home</a>
+                        </li>';
+                        $rol = 'tienda';
+                        switch($rol){
+                            case 'admin':
+                                echo '
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="'.BASE_URL.'" AgregarTienda">Nueva Tienda</a>
+                                </li>
+                                ';
+                                break;
+                            case 'tienda':
+                                echo '
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="'.BASE_URL.'ListaProductos">Lista Productos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="'.BASE_URL.'InventarioTienda">Inventario de Tienda</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="'.BASE_URL.'LoginTienda">Login Tienda</a>
+                                </li>
+                                ';
+                                break;
+                            default:
+                                echo '
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="'.BASE_URL.'">Home</a>
+                                </li>                             
+                                ';
+                                break;
+                        }
+                    ?>
+
+
+
+
+
                     </ul>
                 </div>
             </div>
