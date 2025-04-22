@@ -18,22 +18,66 @@ $(document).ready(function() {
                 console.log("Respuesta del servidor:", response);
                 if (response.success) {
                     $(document).ready(function () {
-                        toastr.success("Bienvenido al sistema", "Hola!", {
-                            positionClass: "toast-top-right",
-                            timeOut: 5000,
-                            progressBar: true,
-                            closeButton: true
+                        toastr.success("Tienda Creada Correctamente", "Exito!", {
+                            "closeButton": true,
+                            "debug": false,
+                            "newestOnTop": false,
+                            "progressBar": true,
+                            "positionClass": "toast-top-right",
+                            "preventDuplicates": true,
+                            "onclick": null,
+                            "showDuration": "400",
+                            "hideDuration": "1000",
+                            "timeOut": "5000",
+                            "extendedTimeOut": "1000",
+                            "showEasing": "swing",
+                            "hideEasing": "linear",
+                            "showMethod": "fadeIn",
+                            "hideMethod": "fadeOut"
                         });
+                        setTimeout(function() {
+                            window.location.href = "view/login_tienda/login_tienda.php";
+                        }, 2000);
                     }); 
                     form.reset();
                 } else {
-                    alert("Error: " + response.message);
+                    toastr.error("No se pudo Registrar", "Error!", {
+                        "closeButton": true,
+                        "debug": false,
+                        "newestOnTop": false,
+                        "progressBar": true,
+                        "positionClass": "toast-top-right",
+                        "preventDuplicates": true,
+                        "onclick": null,
+                        "showDuration": "400",
+                        "hideDuration": "1000",
+                        "timeOut": "5000",
+                        "extendedTimeOut": "1000",
+                        "showEasing": "swing",
+                        "hideEasing": "linear",
+                        "showMethod": "fadeIn",
+                        "hideMethod": "fadeOut"
+                    });
                 }
             },
             error: function(xhr, status, error) {
-                console.error("Error en AJAX:", error);
-                console.log("XHR:", xhr.responseText);
-                alert("Error al contactar con el servidor.");
+                toastr.error("Problema en el Servidor", "Error!", {
+                    "closeButton": true,
+                    "debug": false,
+                    "newestOnTop": false,
+                    "progressBar": true,
+                    "positionClass": "toast-top-right",
+                    "preventDuplicates": true,
+                    "onclick": null,
+                    "showDuration": "400",
+                    "hideDuration": "1000",
+                    "timeOut": "5000",
+                    "extendedTimeOut": "1000",
+                    "showEasing": "swing",
+                    "hideEasing": "linear",
+                    "showMethod": "fadeIn",
+                    "hideMethod": "fadeOut"
+                });
             }
         });
     });

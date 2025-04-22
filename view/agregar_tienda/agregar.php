@@ -3,8 +3,6 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-file_put_contents('debug_log.txt', "Llego al backend: " . date('Y-m-d H:i:s') . "\n", FILE_APPEND);
-
 $pdo = require_once __DIR__ . '/../../core/Database.php';
 require_once __DIR__ . '/../../model/AgregarTienda.php';
 
