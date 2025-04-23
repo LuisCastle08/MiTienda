@@ -12,15 +12,14 @@ require_once __DIR__ . '/../shared/header.php';
         <div class="row justify-content-center">
             <div class="col-11 col-md-6">
                 <div class="card">
-                    <img class="card-img-top mx-auto" style="max-width:300px;" src="<?php echo IMAGENES_URL ?>ejemplo-tienda.jpg" alt="Card image cap">
                     <div class="card-body text-center">
-                        <h4 class="card-title">Bienvenido a "Nombre Tienda"</h4>
-                        <p>
+                        <h4 class="card-title">La Tienda de Kiki</h4>
+                        <!--<p>
                             <a href="https://www.google.com/maps?q=Av.+Por+Ahi+no+se+en+donde+%23666" target="_blank" class="btn btn-link">Dirección: Av. Por Ahi no se en donde #666</a>
                         </p>
                         <p>
                             <a href="tel:+52993425233847" class="btn btn-link">Teléfono: 99-34-25-38-47</a>
-                        </p>
+                        </p>-->
                     </div>
                 </div>
             </div>
