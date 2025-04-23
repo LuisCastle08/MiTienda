@@ -35,6 +35,9 @@
                                 <li class="nav-item">
                                     <a class="nav-link active" aria-current="page" href="'.BASE_URL.'LoginTienda">Login Tienda</a>
                                 </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="'.BASE_URL.'DetalleTienda">Detalle Tienda</a>
+                                </li>
                                 ';
                                 break;
                             default:
