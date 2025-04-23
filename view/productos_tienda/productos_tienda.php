@@ -42,9 +42,11 @@ require_once __DIR__ . '/../shared/header.php';
     </div>
 
     <!-- Productos en Página -->
+    <div class="mt-2 mb-3">
+        <?php echo $listaProductos; ?>
+    </div>
 
-
-    <?php for($i = 0; $i < 5; $i++): ?>
+    <!--<?php #for($i = 0; $i < 5; $i++): ?>
     <div class="row justify-content-center mt-4">
         <div class="col-11 col-md-6">
             <div class="card">
@@ -75,7 +77,7 @@ require_once __DIR__ . '/../shared/header.php';
             </div>
         </div>
     </div>
-<?php endfor; ?>
+<?php #endfor; ?>-->
     <!-- Fin Lista de Productos -->
 
     
@@ -133,7 +135,7 @@ require_once __DIR__ . '/../shared/header.php';
 </div>
 
 <!-- Barra inferior -->
-<div class="navbar-bottom d-flex justify-content-around align-items-center p-1 bg-light border-top">
+<div class="navbar-bottom d-flex justify-content-around align-items-center p-1 bg-light border-top mt-3">
   <div class="row">
     <div class="col-10">
         <p class="mb-0">Productos en carrito:</p>

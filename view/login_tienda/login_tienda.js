@@ -4,6 +4,27 @@ function login() {
     var usuario = $("#usuario").val()||"";
     var pass = $("#pass").val()||"";
 
+    if(usuario == '' || pass ==''){
+        toastr.warning("Datos Incompletos", "Advertencia!", {
+            "closeButton": false,
+            "debug": false,
+            "newestOnTop": false,
+            "progressBar": false,
+            "positionClass": "toast-bottom-right",
+            "preventDuplicates": false,
+            "onclick": null,
+            "showDuration": "300",
+            "hideDuration": "1000",
+            "timeOut": "5000",
+            "extendedTimeOut": "1000",
+            "showEasing": "swing",
+            "hideEasing": "linear",
+            "showMethod": "fadeIn",
+            "hideMethod": "fadeOut"
+        });
+        return false;
+    }
+
 	var formData = new FormData();
 	formData.append("usuario", usuario);
 	formData.append("pass", pass);
@@ -22,8 +43,23 @@ function login() {
                 window.location.href ="DetalleTienda";
             }else if (data.EVENTO === 'NO_EXISTE'){
                 console.log("NO HAY TIENDA");
-                $("#invalido").toast('show');
-
+                    toastr.error("Usuario o Contraseña incorrecto.", "Error", {
+                        "closeButton": false,
+                        "debug": false,
+                        "newestOnTop": false,
+                        "progressBar": false,
+                        "positionClass": "toast-bottom-right",
+                        "preventDuplicates": false,
+                        "onclick": null,
+                        "showDuration": "300",
+                        "hideDuration": "1000",
+                        "timeOut": "5000",
+                        "extendedTimeOut": "1000",
+                        "showEasing": "swing",
+                        "hideEasing": "linear",
+                        "showMethod": "fadeIn",
+                        "hideMethod": "fadeOut"
+                    });
             } else {
                 toastr.error(data.mensaje, "Error", {
                     positionClass: "toast-top-right",

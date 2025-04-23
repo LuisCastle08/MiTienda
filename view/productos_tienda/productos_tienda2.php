@@ -31,8 +31,8 @@ require_once __DIR__ . '/../shared/header.php';
     <!-- Categorias -->
     <div class="row d-flex justify-content-center">
         <h4 class="mt-4 d-flex justify-content-center"><i class="fas fa-sitemap me-1"></i>Categorías</h4>
-
-        <div class="col-10 mt-2">
+        <?php echo $listaCategorias; ?>
+        <!--<div class="col-10 mt-2">
             <a href="ListaProductos1">
                 <div class="card overflow-hidden card_menu">
                     <div class="card-body">
@@ -41,6 +41,20 @@ require_once __DIR__ . '/../shared/header.php';
                                 <img src="https://cdn-icons-png.freepik.com/512/8657/8657720.png"  width="100" class="img-fluid rounded-circle" alt="">
                             </div>
                             <h3 class="mt-4 mb-1">Bebidas</h3>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-10 mt-2">
+            <a href="ListaProductos1">
+                <div class="card overflow-hidden card_menu">
+                    <div class="card-body">
+                        <div class="text-center">
+                            <div class="profile-photo">
+                                <img src="https://cdn-icons-png.freepik.com/512/8657/8657720.png"  width="100" class="img-fluid rounded-circle" alt="">
+                            </div>
+                            <h3 class="mt-4 mb-1">Botanas</h3>
                         </div>
                     </div>
                 </div>
@@ -93,7 +107,7 @@ require_once __DIR__ . '/../shared/header.php';
                     </div>
                 </div>
             </div>
-        </div>
+        </div>-->
         <div class="col-12 mb-3">
 
         </div>
