@@ -10,6 +10,10 @@
   font-weight: bold;
 }
 
+li.nav-item a{
+    color: #FFFFFF !important;
+    font-weight: bold;
+}
 #btn-buscar {
     background-color: #E9CE2C !important;
 }

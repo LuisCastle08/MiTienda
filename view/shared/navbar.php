@@ -13,41 +13,43 @@
                     <?php
                         echo '
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="'.BASE_URL.'">Home</a>
+                            <a class="nav-link active" aria-current="page" href="'.BASE_URL.'"><i class="fa-sharp-duotone fa-solid fa-house"></i> Home</a>
                         </li>';
-                        $rol = 'tienda';
-                        switch($rol){
-                            case 'admin':
-                                echo '
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="'.BASE_URL.'" AgregarTienda">Nueva Tienda</a>
-                                </li>
-                                ';
-                                break;
-                            case 'tienda':
-                                echo '
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="'.BASE_URL.'ListaProductos">Lista Productos</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="'.BASE_URL.'InventarioTienda">Inventario de Tienda</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="'.BASE_URL.'LoginTienda">Login Tienda</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="'.BASE_URL.'DetalleTienda">Detalle Tienda</a>
-                                </li>
-                                ';
-                                break;
-                            default:
-                                echo '
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="'.BASE_URL.'">Home</a>
-                                </li>                             
-                                ';
-                                break;
-                        }
+
+                            $rol = isset($_SESSION['TiendaId']);
+                            switch($rol){
+                                case true:
+                                    echo '
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="'.BASE_URL.'ListaProductos"><i class="fa-solid fa-list"></i> Lista Productos</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="'.BASE_URL.'InventarioTienda"><i class="fa-solid fa-window-restore"></i> Inventario de Tienda</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="'.BASE_URL.'LoginTienda"><i class="fa-solid fa-store"></i> Login Tienda</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="'.BASE_URL.'DetalleTienda"><i class="fa-solid fa-circle-info"></i> Detalle Tienda</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link active text-danger" aria-current="page" href="'.BASE_URL.'"><i class="fa-solid fa-right-from-bracket"></i> Cerrar Sesión</a>
+                                    </li>
+                                    ';
+                                    break;
+                                default:
+                                    echo '
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="'.BASE_URL.'LoginTienda"><i class="fa-solid fa-store"></i> Login Tienda</a>
+                                    </li>   
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="'.BASE_URL.'AgregarTienda"><i class="fa-solid fa-square-plus"></i> Nueva Tienda</a>
+                                    </li>                          
+                                    ';
+                                    break;
+                            }
+
+
                     ?>
 
 

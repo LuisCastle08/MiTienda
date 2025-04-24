@@ -57,6 +57,9 @@ $routes = [
         /* Añadir Tienda */
         'AgregarTienda' => ['controller' => 'AgregarTiendaController', 'action' => 'agregar'],
 
+        /* Cerrar Tienda */
+        'CerrarTienda' => ['controller' => 'CerrarSesion', 'action' => 'cerrar'],
+
 ];
 
 // Verifica si la ruta existe
